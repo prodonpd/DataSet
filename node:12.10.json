@@ -1,0 +1,582 @@
+{
+    "id": "",
+    "name": "node",
+    "slug": "node",
+    "type": "image",
+    "publisher": {
+      "id": "docker",
+      "name": "Docker"
+    },
+    "created_at": "2016-06-17T17:45:46.898676",
+    "updated_at": "2019-12-25T08:11:19.847972",
+    "short_description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
+    "full_description": "",
+    "source": "store",
+    "popularity": 0,
+    "categories": [
+      {
+        "label": "Application Infrastructure",
+        "name": "application_infrastructure"
+      }
+    ],
+    "operating_systems": [
+      {
+        "label": "Linux",
+        "name": "linux"
+      }
+    ],
+    "architectures": [
+      {
+        "label": "PowerPC 64 LE",
+        "name": "ppc64le"
+      },
+      {
+        "label": "386",
+        "name": "386"
+      },
+      {
+        "label": "IBM Z",
+        "name": "s390x"
+      },
+      {
+        "label": "x86-64",
+        "name": "amd64"
+      },
+      {
+        "label": "ARM 64",
+        "name": "arm64"
+      },
+      {
+        "label": "ARM",
+        "name": "arm"
+      }
+    ],
+    "links": null,
+    "screenshots": null,
+    "logo_url": {
+      "large": "https://d1q6f0aelx0por.cloudfront.net/product-logos/a8957077-bbcd-41cc-b6d0-2924a1492e99-node.png",
+      "small": ""
+    },
+    "is_offline": false,
+    "plan": null,
+    "certification_status": "not_certified",
+    "start_count": 0,
+    "filter_type": "official",
+    "pull_count": "10M+",
+    "moreinfo": {
+      "id": "e6658267-cc55-421e-b5be-5e69460fb0d1",
+      "name": "node",
+      "slug": "node",
+      "type": "image",
+      "publisher": {
+        "id": "docker",
+        "name": "Docker"
+      },
+      "created_at": "2016-06-17T17:45:46.898676",
+      "updated_at": "2019-12-26T16:11:32.143990",
+      "short_description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
+      "full_description": "# Supported tags and respective `Dockerfile` links\n\n-\t[`8.17.0-jessie`, `8.17-jessie`, `8-jessie`, `carbon-jessie`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/jessie/Dockerfile)\n-\t[`8.17.0-jessie-slim`, `8.17-jessie-slim`, `8-jessie-slim`, `carbon-jessie-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/jessie-slim/Dockerfile)\n-\t[`8.17.0-stretch`, `8.17-stretch`, `8-stretch`, `carbon-stretch`, `8.17.0`, `8.17`, `8`, `carbon`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/stretch/Dockerfile)\n-\t[`8.17.0-stretch-slim`, `8.17-stretch-slim`, `8-stretch-slim`, `carbon-stretch-slim`, `8.17.0-slim`, `8.17-slim`, `8-slim`, `carbon-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/stretch-slim/Dockerfile)\n-\t[`8.17.0-buster`, `8.17-buster`, `8-buster`, `carbon-buster`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/buster/Dockerfile)\n-\t[`8.17.0-buster-slim`, `8.17-buster-slim`, `8-buster-slim`, `carbon-buster-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/buster-slim/Dockerfile)\n-\t[`8.17.0-alpine3.9`, `8.17-alpine3.9`, `8-alpine3.9`, `carbon-alpine3.9`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/alpine3.9/Dockerfile)\n-\t[`8.17.0-alpine3.10`, `8.17-alpine3.10`, `8-alpine3.10`, `carbon-alpine3.10`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/alpine3.10/Dockerfile)\n-\t[`8.17.0-alpine3.11`, `8.17-alpine3.11`, `8-alpine3.11`, `carbon-alpine3.11`, `8.17.0-alpine`, `8.17-alpine`, `8-alpine`, `carbon-alpine`](https://github.com/nodejs/docker-node/blob/ab3d54cef9f236ed9792aa4b786215db9ee7c1b6/8/alpine3.11/Dockerfile)\n-\t[`8.17.0-onbuild`, `8.17-onbuild`, `8-onbuild`, `carbon-onbuild`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/8/onbuild/Dockerfile)\n-\t[`13.5.0-stretch`, `13.5-stretch`, `13-stretch`, `stretch`, `13.5.0`, `13.5`, `13`, `latest`](https://github.com/nodejs/docker-node/blob/31bd89bbd77709b5dae93c31dbd74bf32b7c4867/13/stretch/Dockerfile)\n-\t[`13.5.0-stretch-slim`, `13.5-stretch-slim`, `13-stretch-slim`, `stretch-slim`, `13.5.0-slim`, `13.5-slim`, `13-slim`, `slim`](https://github.com/nodejs/docker-node/blob/31bd89bbd77709b5dae93c31dbd74bf32b7c4867/13/stretch-slim/Dockerfile)\n-\t[`13.5.0-buster`, `13.5-buster`, `13-buster`, `buster`](https://github.com/nodejs/docker-node/blob/31bd89bbd77709b5dae93c31dbd74bf32b7c4867/13/buster/Dockerfile)\n-\t[`13.5.0-buster-slim`, `13.5-buster-slim`, `13-buster-slim`, `buster-slim`](https://github.com/nodejs/docker-node/blob/31bd89bbd77709b5dae93c31dbd74bf32b7c4867/13/buster-slim/Dockerfile)\n-\t[`13.5.0-alpine3.10`, `13.5-alpine3.10`, `13-alpine3.10`, `alpine3.10`](https://github.com/nodejs/docker-node/blob/31bd89bbd77709b5dae93c31dbd74bf32b7c4867/13/alpine3.10/Dockerfile)\n-\t[`13.5.0-alpine3.11`, `13.5-alpine3.11`, `13-alpine3.11`, `alpine3.11`, `13.5.0-alpine`, `13.5-alpine`, `13-alpine`, `alpine`](https://github.com/nodejs/docker-node/blob/ab3d54cef9f236ed9792aa4b786215db9ee7c1b6/13/alpine3.11/Dockerfile)\n-\t[`12.14.0-stretch`, `12.14-stretch`, `12-stretch`, `erbium-stretch`, `lts-stretch`, `current-stretch`, `12.14.0`, `12.14`, `12`, `erbium`, `lts`, `current`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/stretch/Dockerfile)\n-\t[`12.14.0-stretch-slim`, `12.14-stretch-slim`, `12-stretch-slim`, `erbium-stretch-slim`, `lts-stretch-slim`, `current-stretch-slim`, `12.14.0-slim`, `12.14-slim`, `12-slim`, `erbium-slim`, `lts-slim`, `current-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/stretch-slim/Dockerfile)\n-\t[`12.14.0-buster`, `12.14-buster`, `12-buster`, `erbium-buster`, `lts-buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/buster/Dockerfile)\n-\t[`12.14.0-buster-slim`, `12.14-buster-slim`, `12-buster-slim`, `erbium-buster-slim`, `lts-buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/buster-slim/Dockerfile)\n-\t[`12.14.0-alpine3.9`, `12.14-alpine3.9`, `12-alpine3.9`, `erbium-alpine3.9`, `lts-alpine3.9`, `current-alpine3.9`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/alpine3.9/Dockerfile)\n-\t[`12.14.0-alpine3.10`, `12.14-alpine3.10`, `12-alpine3.10`, `erbium-alpine3.10`, `lts-alpine3.10`, `current-alpine3.10`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/12/alpine3.10/Dockerfile)\n-\t[`12.14.0-alpine3.11`, `12.14-alpine3.11`, `12-alpine3.11`, `erbium-alpine3.11`, `lts-alpine3.11`, `current-alpine3.11`, `12.14.0-alpine`, `12.14-alpine`, `12-alpine`, `erbium-alpine`, `lts-alpine`, `current-alpine`](https://github.com/nodejs/docker-node/blob/ab3d54cef9f236ed9792aa4b786215db9ee7c1b6/12/alpine3.11/Dockerfile)\n-\t[`10.18.0-jessie`, `10.18-jessie`, `10-jessie`, `dubnium-jessie`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/jessie/Dockerfile)\n-\t[`10.18.0-jessie-slim`, `10.18-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/jessie-slim/Dockerfile)\n-\t[`10.18.0-stretch`, `10.18-stretch`, `10-stretch`, `dubnium-stretch`, `10.18.0`, `10.18`, `10`, `dubnium`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/stretch/Dockerfile)\n-\t[`10.18.0-stretch-slim`, `10.18-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `10.18.0-slim`, `10.18-slim`, `10-slim`, `dubnium-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/stretch-slim/Dockerfile)\n-\t[`10.18.0-buster`, `10.18-buster`, `10-buster`, `dubnium-buster`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/buster/Dockerfile)\n-\t[`10.18.0-buster-slim`, `10.18-buster-slim`, `10-buster-slim`, `dubnium-buster-slim`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/buster-slim/Dockerfile)\n-\t[`10.18.0-alpine3.9`, `10.18-alpine3.9`, `10-alpine3.9`, `dubnium-alpine3.9`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/alpine3.9/Dockerfile)\n-\t[`10.18.0-alpine3.10`, `10.18-alpine3.10`, `10-alpine3.10`, `dubnium-alpine3.10`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/10/alpine3.10/Dockerfile)\n-\t[`10.18.0-alpine3.11`, `10.18-alpine3.11`, `10-alpine3.11`, `dubnium-alpine3.11`, `10.18.0-alpine`, `10.18-alpine`, `10-alpine`, `dubnium-alpine`](https://github.com/nodejs/docker-node/blob/ab3d54cef9f236ed9792aa4b786215db9ee7c1b6/10/alpine3.11/Dockerfile)\n-\t[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/chakracore/8/Dockerfile)\n-\t[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore`](https://github.com/nodejs/docker-node/blob/3c10e908934690b6af4f8f83b7e5e1da49926b34/chakracore/10/Dockerfile)\n\n# Quick reference\n\n-\t**Where to get help**:  \n\t[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)\n\n-\t**Where to file issues**:  \n\t[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)\n\n-\t**Maintained by**:  \n\t[The Node.js Docker Team](https://github.com/nodejs/docker-node)\n\n-\t**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  \n\t[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`i386`](https://hub.docker.com/r/i386/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)\n\n-\t**Published image artifact details**:  \n\t[repo-info repo's `repos/node/` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) ([history](https://github.com/docker-library/repo-info/commits/master/repos/node))  \n\t(image metadata, transfer size, etc)\n\n-\t**Image updates**:  \n\t[official-images PRs with label `library/node`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode)  \n\t[official-images repo's `library/node` file](https://github.com/docker-library/official-images/blob/master/library/node) ([history](https://github.com/docker-library/official-images/commits/master/library/node))\n\n-\t**Source of this description**:  \n\t[docs repo's `node/` directory](https://github.com/docker-library/docs/tree/master/node) ([history](https://github.com/docker-library/docs/commits/master/node))\n\n# What is Node.js?\n\nNode.js is a software platform for scalable server-side and networking applications. Node.js applications are written in JavaScript and can be run within the Node.js runtime on Mac OS X, Windows, and Linux without changes.\n\nNode.js applications are designed to maximize throughput and efficiency, using non-blocking I/O and asynchronous events. Node.js applications run single-threaded, although Node.js uses multiple threads for file and network events. Node.js is commonly used for real-time applications due to its asynchronous nature.\n\nNode.js internally uses the Google V8 JavaScript engine to execute code; a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in, asynchronous I/O library for file, socket, and HTTP communication. The HTTP and socket support allows Node.js to act as a web server without additional software such as Apache.\n\n> [wikipedia.org/wiki/Node.js](https://en.wikipedia.org/wiki/Node.js)\n\n![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/node/logo.png)\n\n# How to use this image\n\nSee [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image) on GitHub for up-to-date documentation.\n\n# Image Variants\n\nThe `node` images come in many flavors, each designed for a specific use case.\n\n## `node:<version>`\n\nThis is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.\n\nSome of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.\n\nThis tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.\n\n## `node:<version>-slim`\n\nThis image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.\n\n## `node:<version>-alpine`\n\nThis image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.\n\nThis variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.\n\nTo minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).\n\n## `node:<version>-onbuild`\n\nThe `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).\n\nWhile the `onbuild` variant is really useful for \"getting off the ground running\" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).\n\nOnce you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).\n\n# License\n\nView [license information](https://github.com/nodejs/node/blob/master/LICENSE) for Node.js or [license information](https://github.com/nodejs/docker-node/blob/master/LICENSE) for the Node.js Docker project.\n\nAs with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).\n\nSome additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `node/` directory](https://github.com/docker-library/repo-info/tree/master/repos/node).\n\nAs for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.",
+      "source": "library",
+      "popularity": 1382353112,
+      "categories": [
+        {
+          "label": "Application Infrastructure",
+          "name": "application_infrastructure"
+        }
+      ],
+      "operating_systems": [
+        {
+          "label": "Linux",
+          "name": "linux"
+        }
+      ],
+      "architectures": [
+        {
+          "label": "x86-64",
+          "name": "amd64"
+        },
+        {
+          "label": "ARM 64",
+          "name": "arm64"
+        },
+        {
+          "label": "ARM",
+          "name": "arm"
+        },
+        {
+          "label": "PowerPC 64 LE",
+          "name": "ppc64le"
+        },
+        {
+          "label": "386",
+          "name": "386"
+        },
+        {
+          "label": "IBM Z",
+          "name": "s390x"
+        }
+      ],
+      "links": null,
+      "screenshots": [],
+      "logo_url": {
+        "large": "https://d1q6f0aelx0por.cloudfront.net/product-logos/a8957077-bbcd-41cc-b6d0-2924a1492e99-node.png"
+      },
+      "is_offline": false,
+      "plan": null,
+      "certification_status": "",
+      "start_count": 0,
+      "filter_type": "",
+      "pull_count": 10000000
+    },
+    "tag": {
+      "name": "12.10",
+      "full_size": 348871028,
+      "images": [
+        {
+          "architecture": "arm",
+          "digest": "sha256:49237766200a2d02af82a4ecd10ea8785bc2f1b80e7d27eebbd95646e6da1a2b",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 318984425,
+          "variant": "v7"
+        },
+        {
+          "architecture": "ppc64le",
+          "digest": "sha256:e902bc25182820e1f45d9ae2376362ff960d58eed0de3f659893c123d7060d70",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 343856402,
+          "variant": null
+        },
+        {
+          "architecture": "s390x",
+          "digest": "sha256:a03bbc7112f7cd6373bd7f141ef46914993e4248f9ed3d16109f1620149238b7",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 340824642,
+          "variant": null
+        },
+        {
+          "architecture": "amd64",
+          "digest": "sha256:c953b001ea2acf18a6ef99a90fc50630e70a7c0a6b49d774a7aee1f9c937b645",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 348871028,
+          "variant": null
+        },
+        {
+          "architecture": "arm64",
+          "digest": "sha256:185f6d66e2c3e5f3a24a472a996da07f7b4098936194e3d46460befbb3ef47ec",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 330664449,
+          "variant": "v8"
+        }
+      ],
+      "id": 68053555,
+      "repository": 21176,
+      "creator": 1156886,
+      "last_updater": 1156886,
+      "last_updater_username": "doijanky",
+      "image_id": null,
+      "v2": true,
+      "last_updated": "2019-09-12T21:40:57.713334",
+      "history": [
+        {
+          "size": 318984425,
+          "digest": "sha256:49237766200a2d02af82a4ecd10ea8785bc2f1b80e7d27eebbd95646e6da1a2b",
+          "architecture": "arm",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": "v7",
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:cc2e500f6b653a645f6001c07bbf1178bf20555c9be7e0834a8c548f67a2d78e",
+              "size": 42086900,
+              "instruction": "ADD file:91eff5584a7f103d6443e8fbd0b2a5c82942c7334e241590bb4ad2fde4d77ee9 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:2e6cdcabf7c2d5ae30b29b4a2d2519f5c82d063c92d8ab3444ed34cf89f2aef7",
+              "size": 9491460,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:2ab3d8012daa71d25fb6266944040b95fb489cb6e1aec7a71886d9d7ac269c26",
+              "size": 3918722,
+              "instruction": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+              "digest": "sha256:6709d1823576801e09b374d72c1c9a533c59e2357651cb2ab9fb3645b18fb769",
+              "size": 46390373,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:17cc5be52fe05301a7e9357c92db5a5c05efff59806936115aa395619a0669eb",
+              "size": 195512496,
+              "instruction": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:0992996d332209dc9c665b8ae3e0bd4e36ea5c3525fbde77bdd8dda30543f95d",
+              "size": 4178,
+              "instruction": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NODE_VERSION=12.10.0"
+            },
+            {
+              "digest": "sha256:6f53205c096a2ad703288d2991a3b97b2b1b6f83488b856a654b2e89f3e4ba9a",
+              "size": 20181448,
+              "instruction": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV YARN_VERSION=1.17.3"
+            },
+            {
+              "digest": "sha256:0f5c7a9c97a1a1c7c60e680ded7388d765719f3df00185b0ce335991b30b3263",
+              "size": 1398554,
+              "instruction": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+            },
+            {
+              "digest": "sha256:b430e31ccb451ece04dd17e28c1b3d72851f8d0c41389949d5ee4fadd4445087",
+              "size": 294,
+              "instruction": "COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"node\"]"
+            }
+          ]
+        },
+        {
+          "size": 343856402,
+          "digest": "sha256:e902bc25182820e1f45d9ae2376362ff960d58eed0de3f659893c123d7060d70",
+          "architecture": "ppc64le",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:10831a4d6f4248b0aaa384f245c08f4fc47dfc9753f538ef20b35c0228e4fef4",
+              "size": 45652743,
+              "instruction": "ADD file:73ad9da657710f8833b21e07d8e7f17a925dad627db9299a21f837a057077fb3 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:f794a2e4526b532eb031e3c63ebc49fce17cd57b89153cd51f2c16ab9667a4fc",
+              "size": 9994882,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:e3fa2203e37520b8df0fba14ca380adb1614f273a5e1c6a54598a18d881b71ed",
+              "size": 4296515,
+              "instruction": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+              "digest": "sha256:004465f1c8159d34a5bfec93d69722cf83a1a90ea09f71932e564464cd2e3378",
+              "size": 50073145,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:17abe704bc9c81fc36043b7f9963808835b4cfd7c355f623428ee7a33ac68768",
+              "size": 210473935,
+              "instruction": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:e3f4d8aca6078d4d539ccc293676ce03ef53b00204a5e4236a5d02d4b0edd1a1",
+              "size": 4196,
+              "instruction": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NODE_VERSION=12.10.0"
+            },
+            {
+              "digest": "sha256:472571c89a7f767cf9861157d8d75343f3a7e2d56647ee13a1c4d3f6eef2c561",
+              "size": 21962138,
+              "instruction": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV YARN_VERSION=1.17.3"
+            },
+            {
+              "digest": "sha256:882ab6ac1386d5c39e3a7e46d45dfc44fefce2db16be0ff56c7c9cd176d85d9b",
+              "size": 1398555,
+              "instruction": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+            },
+            {
+              "digest": "sha256:71b9f99ffefb68e643a46d8342680b915fede273393320a620efa5d9a6f883a0",
+              "size": 293,
+              "instruction": "COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"node\"]"
+            }
+          ]
+        },
+        {
+          "size": 340824642,
+          "digest": "sha256:a03bbc7112f7cd6373bd7f141ef46914993e4248f9ed3d16109f1620149238b7",
+          "architecture": "s390x",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:5d4da55d9cf0eafd201c3838c03984cc0ef153b12bbfd5964ffee9e9d6b38bbb",
+              "size": 45240190,
+              "instruction": "ADD file:5c261012373b1f613abf90c8163f72247906770a6209fc775af35a131ba818f9 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:dad3041fe12244954218a4bd2bfdcb5ae29fd416b247bd17e41c73cbdf9b6de5",
+              "size": 10317726,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:f6542c8f56fbd52f8d9d01d92625e0a728578d6e417adeba2baa0678cc5009d6",
+              "size": 4372276,
+              "instruction": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+              "digest": "sha256:25fa3a7ad4fa33ba9843e1e836bf619c36b0cc5a1ce2d9b3e1e1b932c6220148",
+              "size": 50488527,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:271ed6d81ea099ed00ae3e2d3c436fe81ecbf2fd85a94445c7592c99cde20e64",
+              "size": 206858680,
+              "instruction": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:f35ce53a2f745333a8b6463b4400d12467c60dda72c8a1cfee6ca645b7e875f7",
+              "size": 4167,
+              "instruction": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NODE_VERSION=12.10.0"
+            },
+            {
+              "digest": "sha256:b607a99e4fdad8c949ed8d5a51db3d43903e00691bc7b53be63cf232dce132e4",
+              "size": 22144259,
+              "instruction": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV YARN_VERSION=1.17.3"
+            },
+            {
+              "digest": "sha256:3d8e723f6eb9f729ad469f3cc93bab9dda215d1af19699a3840452aa6b53184d",
+              "size": 1398524,
+              "instruction": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+            },
+            {
+              "digest": "sha256:1a8923ee2c91321b47bdb708a49d39ac0394ec2510cadf558fe13d77d58e6df1",
+              "size": 293,
+              "instruction": "COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"node\"]"
+            }
+          ]
+        },
+        {
+          "size": 348871028,
+          "digest": "sha256:c953b001ea2acf18a6ef99a90fc50630e70a7c0a6b49d774a7aee1f9c937b645",
+          "architecture": "amd64",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:092586df92068bd6b59c497f379e48302aa1b27cf76b2de64d262ba7bc19e47b",
+              "size": 45375252,
+              "instruction": "ADD file:9788b61de35351489958c8abe175960865790312ced56458caa94ccb0b9bb757 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:ef599477fae0e7485cae7d038240cda6358b3af22c7eb4ea502c60771b68dcae",
+              "size": 10791705,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:4530c6472b5d2a08201c9cd65f43a788e526eb4fe498a4fbe5e4d5688535cd21",
+              "size": 4340153,
+              "instruction": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+              "digest": "sha256:d34d61487075d127bf6dd2906ea3abc50e0a3cd9aa2f230fc41b253b153a17ee",
+              "size": 50065044,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:87fc2710b63fcf6c0a5c876b1b37773d9e949cb4d66eeb06889ef84f7b5a5a93",
+              "size": 214829889,
+              "instruction": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:e83c771c5387a93b121fdd5ff15d311f4b2426629857e685841e82fa4b054fab",
+              "size": 4165,
+              "instruction": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NODE_VERSION=12.10.0"
+            },
+            {
+              "digest": "sha256:c28bd271641eda8399e2728a0443168efec665d6570335d7fd436e89aac758d7",
+              "size": 22066013,
+              "instruction": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV YARN_VERSION=1.17.3"
+            },
+            {
+              "digest": "sha256:5137e695771060efc647c706bd2a392d661fc38376a3fe5b60faf59959c418b2",
+              "size": 1398513,
+              "instruction": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+            },
+            {
+              "digest": "sha256:1d8bcbc41a69aa7e29758bf24b61408cc357637b45b01958a64f3ce5759c5af8",
+              "size": 294,
+              "instruction": "COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"node\"]"
+            }
+          ]
+        },
+        {
+          "size": 330664449,
+          "digest": "sha256:185f6d66e2c3e5f3a24a472a996da07f7b4098936194e3d46460befbb3ef47ec",
+          "architecture": "arm64",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": "v8",
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:815c1832d6513be8edd397e11041a4aee3f96dce52f0ebcb981c3b9cdd510b36",
+              "size": 43144819,
+              "instruction": "ADD file:caf4d612b52451d22260b0d5cffb0fbb4b73aa3841a8a622c9a87923dee2f910 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:f04bed802a875187697c84fbe66916965d4793e879ff5bb0b618d3cfb4967eea",
+              "size": 9737882,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:6d5c571b36bfd171c2d8ed92043e8246a279ad06d7a71f3d7db36aa14117f1d7",
+              "size": 4094344,
+              "instruction": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+            },
+            {
+              "digest": "sha256:2f32707d637509a6dfb7642e2cc074962286caa42ae19d4aa8d4dcf194d0bad7",
+              "size": 48015283,
+              "instruction": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:355cebf26dbb1938562f78fa34ad0c3ae6c4749a38e4dbfc5da1f8e801cd1ea7",
+              "size": 202231598,
+              "instruction": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:f2d348958a711294ad9c6f80a819e84a10d0d3b6eba537742c8ef1522599a1cf",
+              "size": 4193,
+              "instruction": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NODE_VERSION=12.10.0"
+            },
+            {
+              "digest": "sha256:6bd442d0602022ac5c41b66783ef5c6c436d52f78d29b08b536fea776815b67c",
+              "size": 22037493,
+              "instruction": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV YARN_VERSION=1.17.3"
+            },
+            {
+              "digest": "sha256:ced5484908d26f8f17a670844f15c8b79d8a9169a12151e96549d3a8e425e38d",
+              "size": 1398545,
+              "instruction": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+            },
+            {
+              "digest": "sha256:af32c41f9503cf4a1f2d649eddbed8c95a2a1c015bcc974de1c0271cd537c59d",
+              "size": 292,
+              "instruction": "COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"node\"]"
+            }
+          ]
+        }
+      ]
+    }
+}

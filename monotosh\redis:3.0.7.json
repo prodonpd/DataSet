@@ -1,0 +1,985 @@
+{
+    "id": "",
+    "name": "monotosh/redis",
+    "slug": "monotosh/redis",
+    "type": "image",
+    "publisher": {
+      "id": "b8df4efe4915441d84dd285e814ad1e9",
+      "name": "monotosh"
+    },
+    "created_at": "2018-04-29T18:34:28.507193",
+    "updated_at": "2018-05-02T05:54:46.775477",
+    "short_description": "",
+    "full_description": "",
+    "source": "community",
+    "popularity": 0,
+    "categories": null,
+    "operating_systems": [
+      {
+        "label": "Linux",
+        "name": "linux"
+      }
+    ],
+    "architectures": [
+      {
+        "label": "x86-64",
+        "name": "amd64"
+      }
+    ],
+    "links": null,
+    "screenshots": null,
+    "logo_url": {
+      "large": "",
+      "small": ""
+    },
+    "is_offline": false,
+    "plan": null,
+    "certification_status": "not_certified",
+    "start_count": 0,
+    "filter_type": "community",
+    "pull_count": "47",
+    "moreinfo": {
+      "user": "monotosh",
+      "name": "redis",
+      "namespace": "monotosh",
+      "repository_type": "image",
+      "status": 1,
+      "description": "",
+      "is_private": false,
+      "is_automated": false,
+      "can_edit": false,
+      "star_count": 0,
+      "pull_count": 47,
+      "last_updated": "2018-05-02T05:54:46.775477",
+      "is_migrated": false,
+      "has_starred": false,
+      "full_description": "",
+      "affiliation": "",
+      "permissions": {
+        "admin": false,
+        "read": true,
+        "write": false
+      }
+    },
+    "tag": {
+      "name": "3.0.7",
+      "full_size": 357475513,
+      "images": [
+        {
+          "architecture": "amd64",
+          "digest": "sha256:25bf11bec2e5d3063adc38b051c9e6e4d6a8aa061906eb487eafae78658b65cd",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 357475513,
+          "variant": null
+        }
+      ],
+      "id": 26496227,
+      "repository": 5444631,
+      "creator": 2621249,
+      "last_updater": 2621249,
+      "last_updater_username": "monotosh",
+      "image_id": null,
+      "v2": true,
+      "last_updated": "2018-05-02T05:54:46.518228",
+      "history": [
+        {
+          "size": 357475513,
+          "digest": "sha256:25bf11bec2e5d3063adc38b051c9e6e4d6a8aa061906eb487eafae78658b65cd",
+          "architecture": "amd64",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:f5cc0ee7a6f68b065e4d0a517a2cbae2e3bffb242b3252b53fe77496adaae514",
+              "size": 30130289,
+              "instruction": "ADD file:ede5a88363e384813454439a3c2b44c445aea433284d040a20e4149bf9f18a5c in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"bash\"]"
+            },
+            {
+              "digest": "sha256:5fc25ed18e877d43401da85c64188e58d30d84158be61b7c2a380e487c2e7443",
+              "size": 2071,
+              "instruction": "/bin/sh -c groupadd -r redis && useradd -r -g redis redis"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV GOSU_VERSION=1.10"
+            },
+            {
+              "digest": "sha256:e025bc8872f6df52f89826f3bd4300771177bcd0268a5b091bbe11e52d62634d",
+              "size": 983160,
+              "instruction": "/bin/sh -c set -ex; \t\tfetchDeps='ca-certificates wget'; \tapt-get update; \tapt-get install -y --no-install-recommends $fetchDeps; \trm -rf /var/lib/apt/lists/*; \t\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tchmod +x /usr/local/bin/gosu; \tgosu nobody true; \t\tapt-get purge -y --auto-remove $fetchDeps"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV REDIS_VERSION=3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV REDIS_DOWNLOAD_SHA=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c"
+            },
+            {
+              "digest": "sha256:77c68b51b836245e7f8f2454f1de9dcc743afb1b316ba22dd35375fdf4654386",
+              "size": 3008545,
+              "instruction": "/bin/sh -c set -ex; \t\tbuildDeps=' \t\twget \t\t\t\tgcc \t\tlibc6-dev \t\tmake \t'; \tapt-get update; \tapt-get install -y $buildDeps --no-install-recommends; \trm -rf /var/lib/apt/lists/*; \t\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha1sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tmake -C /usr/src/redis -j \"$(nproc)\"; \tmake -C /usr/src/redis install; \t\trm -r /usr/src/redis; \t\tapt-get purge -y --auto-remove $buildDeps"
+            },
+            {
+              "digest": "sha256:7c403ece3755ee9c08cfc4beaca65fe8e453a0d3cdff9beb4b0488aa9b5e2891",
+              "size": 98,
+              "instruction": "/bin/sh -c mkdir /data && chown redis:redis /data"
+            },
+            {
+              "size": 0,
+              "instruction": " VOLUME [/data]"
+            },
+            {
+              "size": 0,
+              "instruction": "WORKDIR /data"
+            },
+            {
+              "digest": "sha256:0a653bd338f41b1181c6c2121a39430e179d12f63a8b7c109322404cace2f5eb",
+              "size": 396,
+              "instruction": "COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ "
+            },
+            {
+              "digest": "sha256:31531fd948c61899144f48f39bfb5b3e61031eae834f2a68f89599cc9e327cbf",
+              "size": 121,
+              "instruction": "/bin/sh -c ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat"
+            },
+            {
+              "size": 0,
+              "instruction": " ENTRYPOINT [\"docker-entrypoint.sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " EXPOSE 6379/tcp"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:b787cc9f4e92cf9783b58a8f8bfaa69a7f6c98ef13677e6ba8aea263bdfde642",
+              "size": 153,
+              "instruction": "COPY file:4cbe096bdd073cbda8f78a2d51370c1e76c960d5000b03084bb4d686b6d06157 in /root/ "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:00d9a0346ac5b6e5dbe6bc69cf7acb7901a1b25d086aba904060d53c8e77b104",
+              "size": 14799,
+              "instruction": "COPY file:2c6faab87688fb11813adbec6d368ff9035aabdea774a2bff0cb53299578f682 in /etc/ "
+            },
+            {
+              "digest": "sha256:ef06d686210df8326392dc1c8e18d4808fb4976652fa0afd4c359b84bcd961cf",
+              "size": 155,
+              "instruction": "COPY file:4cbe096bdd073cbda8f78a2d51370c1e76c960d5000b03084bb4d686b6d06157 in /root/ "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:1a3918d7a9719f23771bce0613de18fcf990becbb9b02a266a6fbb9905e96f1e",
+              "size": 14802,
+              "instruction": "COPY file:2c6faab87688fb11813adbec6d368ff9035aabdea774a2bff0cb53299578f682 in /etc/ "
+            },
+            {
+              "digest": "sha256:7ace0b7508b5995f091f3153dbf6d3dd2a19145001a0e676ba1b86e935f5fcd8",
+              "size": 198,
+              "instruction": "COPY file:95a77adf82462c0273957bcf47d26f8c036196a0eed7465f05c11b3390c6c3e0 in /root/ "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:01c221ef394b721d1de836139e3bcae34ee7262da66519b85a7021632e153a8b",
+              "size": 14801,
+              "instruction": "COPY file:2c6faab87688fb11813adbec6d368ff9035aabdea774a2bff0cb53299578f682 in /etc/ "
+            },
+            {
+              "digest": "sha256:ead9273138d3d99e2cb94ab94864e1a27f4beb9e5c68b6d7b456898264664daa",
+              "size": 218,
+              "instruction": "COPY file:e9a80482bdd2fccbd6b76635fb065564c2e2304c9a7814f23462c747aef1daf9 in /root/ "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:a2526e3f95bf35262fed9805faf9ac7539a80c33dab2843062a4072f20ea21a6",
+              "size": 14828,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:f61356556e27eb12deede6097f207eeb3e75fa41d182684d8bc2c23c2fcb9f48",
+              "size": 219,
+              "instruction": "COPY file:e6ecb128bf9213caedaa1d59f74a405ad3aa463b9e547a6e2e89ec3e3da5e24f in /root/ "
+            },
+            {
+              "digest": "sha256:c26306c2dd1d6c5635114ac4b87e233b20d5e9b1a6e2baf390727f63b4501b66",
+              "size": 73223057,
+              "instruction": "/bin/sh -c apt-get update &&    apt-get -y install python-pip"
+            },
+            {
+              "digest": "sha256:44b7f299139efbf0952a0ba3815e54d754081c980e9fafac64042fcc9c74e1ae",
+              "size": 184510,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:64e8f397c18041f712b7beb362eb2b551ef36a66864a5f11b335501292da3518",
+              "size": 14831,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:d4e1fa51b9436215eff6a6dbeb2fdf81d9d97f257d9dde140eb508da8737398d",
+              "size": 217,
+              "instruction": "COPY file:e6ecb128bf9213caedaa1d59f74a405ad3aa463b9e547a6e2e89ec3e3da5e24f in /root/ "
+            },
+            {
+              "digest": "sha256:e21a9c1b126e1c50925ee1f054cfa32b8fa753621394c98507fc8788c14b529f",
+              "size": 9830485,
+              "instruction": "/bin/sh -c apt-get update &&    apt-get -y install python-pip"
+            },
+            {
+              "digest": "sha256:94c8148533f2720424a6c818bdfdbc710a2a4a40df633d2f80cd3d26d7b0dacf",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:ac1df2f7efc536ab035059557f8ac32ecc819f1818bfac4559115035b41b3adc",
+              "size": 115,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "digest": "sha256:05a2c755d8299ffa93c1ff548fda56885e3e31f8606a780610a9ec61383f134e",
+              "size": 1314,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:d448326e8b4b4bd219e094bd1bf08fd791cb837dcfb669c6399bdfcff32562d9",
+              "size": 14827,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:058da928a64b0549d5550146a7351245e6a4f286f3b0581d4f56cdf28eddf1e6",
+              "size": 266,
+              "instruction": "COPY file:2fe90c1ca9e470f833000c49a458f7bb45578772a4f0fe1ce9b4ea07fb0119a9 in /root/ "
+            },
+            {
+              "digest": "sha256:6472cb874e5f8d596e50a325b6b32b07eacdd52ad082600b417555754ff7e224",
+              "size": 9830489,
+              "instruction": "/bin/sh -c apt-get update &&    apt-get -y install python-pip"
+            },
+            {
+              "digest": "sha256:097d298e302215da800d22db8501b8787334414b3debf7e8b0ec3265736f07c6",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "digest": "sha256:120e21301e2a004c236c3914f098fbdc7fdc3fe8100c64e466a70ad66bd69e20",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:733a11c220b358d62aa1af906fe10ec8928ea873de88730833af5a686d6831e0",
+              "size": 14831,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:ef4bf72e20bf632dd437c3264a41f415f0ec0b09b334a489969c556f9c5590c7",
+              "size": 279,
+              "instruction": "COPY file:8c2acf6a3b82b2f82dd87bf59715ba870a75e72749ff55d3308480e5d5fbd013 in /root/ "
+            },
+            {
+              "digest": "sha256:a35c420e305aba585ae7fbddb352f43da510933cd51741332cfb2c9a5596c958",
+              "size": 9830471,
+              "instruction": "/bin/sh -c apt-get update &&    apt-get -y install python-pip"
+            },
+            {
+              "digest": "sha256:b8a9ba916f0853a5392c50500b6f6d59a312bb64c61924daaecaeed661f1ca68",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "digest": "sha256:faa6c50275f39adc9ba5af072f42ea5f0dafd82978aa076236b5dd21b06a61b9",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"redis-server\"]"
+            },
+            {
+              "digest": "sha256:0bc4425e0826d5f50402dba570ed54dbf99b37f8948ad76b20526f111e296ea5",
+              "size": 14831,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:6c7b1880ad4bea4c90705dac512d25cd2c4db407ebb224fd29c54078e4971e3b",
+              "size": 294,
+              "instruction": "COPY file:9e4a7dfc341d033c0192c7099c4ba0193194ac1c09eb2a24bbacce99b2f628bc in /root/ "
+            },
+            {
+              "digest": "sha256:b284d638c3728452eaa504cfc55662daffd09c6a756e4e1706df6d6f89af65ba",
+              "size": 9830487,
+              "instruction": "/bin/sh -c apt-get update &&    apt-get -y install python-pip"
+            },
+            {
+              "digest": "sha256:fab1dc29e3bcb069347d937e4b88ec15f96bb2ec00a03cca429c0c8023611e95",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "digest": "sha256:2b651c2ed237c0e92dc59704f9c06e0fb01a9179a2fdf3b602f6a7e119ca9d89",
+              "size": 134,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "digest": "sha256:f9145a36d98c0a913bd6ceb989564f7d607ffe2135b1ea50dd83dbd9a89dae4c",
+              "size": 116,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:4dc538ae02f1708b92c07d0cb726f822b2360b7e209b0e607205f76763f5669e",
+              "size": 1314,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:de8a5336951199d6e9c0fd54aff26bfa35ae2e7cf6ef0d6f8ec702d4c284190c",
+              "size": 14832,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:d2d8e857a804497fc6ef7fb3e1d303363ee6a3e17ea6057bd9f05cfe35d2e64e",
+              "size": 318,
+              "instruction": "COPY file:664fa30f3cd68396345625d511c9a5af5712088bf2ad29dc3852d24789089a6d in /root/ "
+            },
+            {
+              "digest": "sha256:7882f3e76bb48ad06d1425d9732a66a33afa8cbef5ee1140a5605083ee37d8f7",
+              "size": 16926,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:56fecf5a44d58c651cb92b61cbbfb3495d4cc483eaad5dffa1b9d806d17ee047",
+              "size": 89462824,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:2efb8a7680ca305883f92876068382a808aee85d37d1f011cffe50c975b12331",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:11ba9f112b2080b5791ec3be9e8a8c4bcb767be5f14165fce5f2b4e763c71545",
+              "size": 3762518,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:ddf43f62c96f8d29b8715004c016de8bcfe864a80c18d6f732cd70faa5494440",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:05c0a854d4384e000e4de244ae7b500417aed91b0784ba17f56d9744696f4e57",
+              "size": 14832,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:3aaf271d8caad1ffdb6db84aeafee6f8524a4ada19defb43f3fbc7d05b3c6c34",
+              "size": 319,
+              "instruction": "COPY file:664fa30f3cd68396345625d511c9a5af5712088bf2ad29dc3852d24789089a6d in /root/ "
+            },
+            {
+              "digest": "sha256:78ad0330f2102834cb1f448296a80058c10383365f8b257ca89c31bdde2917bc",
+              "size": 16926,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:d61ce3c4bf1b65bbd40da72fae45ed368430d361c20cbf6cb4c8c156bb7248e1",
+              "size": 9830474,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:6d73a90a1774015521b8aeea41a434fa190f8adc1092e3fa611febacde34960a",
+              "size": 90,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:4fd8d53b8a5dcf75b9483e152d8f7765c0c9c0992f07c1f85db34c8bab443085",
+              "size": 3653244,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:4d728248931de9e55b84dc9310c7db37ec1197d89b1fa21cdb699c2a25e91c8c",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:be6a432a1a16134b647a7ff706e12cd8bf5ec7045a7b846887fd90f04dd33337",
+              "size": 14830,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:f827429df5b157691708d8b9f7c9f9461b3e61c2b0ebd6c9d5eec949f643e265",
+              "size": 322,
+              "instruction": "COPY file:be531a6f08c9664ad4beb13f3de68d0193be41e59945b0e0a6c7242837c95c21 in /root/ "
+            },
+            {
+              "digest": "sha256:eed976558f97176345ea340943cd4851e54f6d6ac36e1d95c1e80ec89897dfa2",
+              "size": 16924,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:2e028d655a66c629a1ad00591a8d6c8ed4d6ded3c262b76cc196edd6f7bc155b",
+              "size": 9830481,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:eedac01652e0f920fd1746ba5233dc6707fec277785308e97f4c891527c2b836",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:ed8e1231b5a94dc87e6384693fdea23d61dc4db8b5f2abf7d698d2969ed5df95",
+              "size": 64814,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:984f5593b863b294b87e93c15868a32f1be8d2a645a5bad636a967434d5915ba",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:f5d6e51f24dfd788346a79225a2912ffd9cdb402f60c4720fa0bd240640a986e",
+              "size": 14833,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:1d940a03fdc105a665bfee6c1902843b61660a072a48efb0e4b23572e87fbd7c",
+              "size": 322,
+              "instruction": "COPY file:19d354a59aa4a9249ed3b93a23a4343d018e824903ef432bd8ea4d917d683d12 in /root/ "
+            },
+            {
+              "digest": "sha256:dcc2782587328c30ccfa3e00bd7ecea29b6ce60ade4d9e0ad9e8bbec2287924e",
+              "size": 16926,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:3f21991fc56f0b542b13a22ffe8859886e97474baf38154ea48ea6851bdcfa38",
+              "size": 9830488,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:7a2de50e44b9d954f1dd3203c5798aa95456dd2eb91a2f9b58789925d4179092",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:21c8bbe1d1136653f745c86c4d83cd4f945cab9175e9203f3c862d391566ab66",
+              "size": 64820,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:6a9e4963a978b13e5715c07a8c9c1ffa8089a985a9f0384dc4871fc8ff42b4f0",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:67a4a6a409c6b3a91d29b43c89d63fbd27aff2e20e598022c6cb1bc81cfe0156",
+              "size": 14829,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:296336b7f83e0965352e01c4d005b0a8bfe182a07fb45e03bceb596af93e2a80",
+              "size": 326,
+              "instruction": "COPY file:514bd1a80f7ade6317bf513daa9126edda2920c14b1a5e0a47b5b19c448c20ac in /root/ "
+            },
+            {
+              "digest": "sha256:a76d195fb93b5b0689e1c2b0d275423f2b3b5dc218d4abe5580f4d205ccf68ab",
+              "size": 16924,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:c1a82ce417c7c5a60d0b48210db1d3352b458aff8c51eade5e4c6b7377f33b2f",
+              "size": 9830489,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:9ed10cd31c56337c5a25623b7991fbabcb5e20f9d2d1b1cc95d0d7b90db0bb06",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:4ed82997affe962dc53618e5e6cd5d404c1b281aaa3f68c3c0ac6578e63d0202",
+              "size": 64820,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:033310296dd00e458513ebbd3a84622e3114badc98b5844801905bf1586e2274",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:eb919021b9bddc552c1dc86481a906083196f44011c007a599ccdba2efb7c1a8",
+              "size": 14832,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:f403633d9254c4e8b544b1f96249d5f803ae4be855da8b047a8dcdac63e61ef7",
+              "size": 321,
+              "instruction": "COPY file:be531a6f08c9664ad4beb13f3de68d0193be41e59945b0e0a6c7242837c95c21 in /root/ "
+            },
+            {
+              "digest": "sha256:1b3471e34ab067e08179cfe9838a712594f9ef91f5a37e6eeb7c7eb3c20b89ca",
+              "size": 16926,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:422a155aab708c63fa79e0ad3250a44b1ffc5f520eb59d83d2a30ef18c9c29c1",
+              "size": 9830486,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:40ce3bd08d604b8b474767bb370c9566a5f0d5c77f8c8987414af5957b77b9dd",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:d675f2a626ab61d085a5b91a7a9876c1938093059a602639384d4d06d827c9c6",
+              "size": 3653253,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "digest": "sha256:d973f9d65a6b9f7b2aca1a3495e5699b2c0cc6cec01cbfd63b76c239604cff54",
+              "size": 132,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:58127aafa7ec20d0e287afcd3cabf86edfdf8c5165f72aba0d5100f2ec0ca4ac",
+              "size": 1312,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:8d1cf8bd2bbd4e14c1856e417867116f8e7828d827b3ed9eac8bdae982dbea60",
+              "size": 14832,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:21d1e32f1e1aac66e866e5d58cd160dbd78e88a258b8a879a08b59698eb9be25",
+              "size": 328,
+              "instruction": "COPY file:514bd1a80f7ade6317bf513daa9126edda2920c14b1a5e0a47b5b19c448c20ac in /root/ "
+            },
+            {
+              "digest": "sha256:07784b1b221f6d1e0903315cda0b7f612e2088d7471dd8bec8c17ebd1ddec99b",
+              "size": 16926,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:29294951ed6e1357d77406316e95a54e9953280ef1de912d9f30d063937e36ff",
+              "size": 9830492,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:ddd0174e52b4bb25ab27f5c34964e00418d3008334070ae921453020d47a3d12",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:1cab13829b9818f7decdeacee3e91c4cda18023d33c95e47f856605477af9bbb",
+              "size": 64820,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:f3327076388a6003690f81d2a0c112a981ea30713ee23690f757ec494b5a5c6a",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:8971e678fdc6f368d9eafe9ba22a930a7f1225074752cd8ccba80cbe70452fe4",
+              "size": 14829,
+              "instruction": "COPY file:a44a051a5167cccdeb822071dd958dfa8fb8d014474677e36efe07feb4b72090 in /etc/ "
+            },
+            {
+              "digest": "sha256:19796796c97e292939b590276babe66629772f33765690b397ed35c8cbf7d61e",
+              "size": 331,
+              "instruction": "COPY file:514bd1a80f7ade6317bf513daa9126edda2920c14b1a5e0a47b5b19c448c20ac in /root/ "
+            },
+            {
+              "digest": "sha256:36f3132eec37dad4b5a44a2eacaecc8fc29059e98184639dd4ea70fec0126fdb",
+              "size": 16927,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:24cc5f64d9149d0b9f4c7d8b696bbf8b4634508d690d7d78745ee34d8cedafa5",
+              "size": 9830476,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:b7bfc8dba5c2f04b7cee636caf00f1132302712b34d70cad8923374a579ef89f",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:e5c8358cd85d41ca8b1de83783a53ff6f5c257fdaf7e0b94cd37b0a5f95cf521",
+              "size": 3653195,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:f6571a41452af089714d4b4ad31b60e21ec35a9bca851de5e4764d174b61f4c5",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:c01a305889ff0f39140aa0c3a1922894a6a26e7afdc6c517871dfca78471b765",
+              "size": 14831,
+              "instruction": "COPY file:a44a051a5167cccdeb822071dd958dfa8fb8d014474677e36efe07feb4b72090 in /etc/ "
+            },
+            {
+              "digest": "sha256:c8d3a0297eb30a56bfc1a5286d4bacf421ab7e283ab2d016ec8e03da69155a50",
+              "size": 330,
+              "instruction": "COPY file:a53de575ed501a30af6a62d12942127ad923882641be64beb9416fba2a12596d in /root/ "
+            },
+            {
+              "digest": "sha256:aeea0bd53c12d2ee950f03ca4c22140f33222fa0172541a7fe80227237abfd5f",
+              "size": 16927,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:063003359fb263c535a83e45654a84e1bebd18e0e7385c3a7d687a083558caf7",
+              "size": 9830488,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:9d7b64cec98578e7bd4b9508b75a7cfa57f60b1a0703c4355c36d7ba6dd94617",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:b05703b370ae676d82d4d6c932ebfbc7a9f3fe8d514b4be02efdbd71f7c5ac28",
+              "size": 64822,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:17244d81a6b9ef69b29440483b78e3bd77884403e1a8acb62e2b0df7354a17e4",
+              "size": 1312,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:e0f91d82cd93b20743ee85ef9870c44a402dd69f44f37358012d04cef6aa7710",
+              "size": 14830,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:d8ef7779d0024165626f9bda733666342e1ab35c6b8a86eb594417ddc9327ecd",
+              "size": 353,
+              "instruction": "COPY file:57a30788982239eda4e2457895536177b2c6509aad79dee9ee7f7993af63721e in /root/ "
+            },
+            {
+              "digest": "sha256:e3d5ca2d25017931ba2162a8d0ac373f008254e939a0217d5d22ececb04dbac3",
+              "size": 16927,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:ad5707173f80b5fe73b3ce4974dd6d1650a16849ab0aab308864294e8f77882f",
+              "size": 9830480,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:c55bb5137b042ffb28e854fc29049ff6693fb3b2bf20377bdf0bb821fc716a41",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:7f0898b9ee3f2bd727e74349968fbf50fc87eae1388637fcdbd936ab41017ca6",
+              "size": 3654523,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:e1f6ea52a476498b3e8d37e4ff1c896562518e1ff7ff1dc3311d11c0e922bd17",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            },
+            {
+              "digest": "sha256:0b7abf30a1fdd47716a5721cb72c01e318bac81dbb507ef72d86908327bc7d0b",
+              "size": 14834,
+              "instruction": "COPY file:4d8951015e6844b39986c0f669cbd874a33f86dc7a38279743ed01bcc1df2bf1 in /etc/ "
+            },
+            {
+              "digest": "sha256:eb6b26d6972e93ee994661cb6b902cbbe3145537c01083eafdd3ef8b148db249",
+              "size": 368,
+              "instruction": "COPY file:4847fe14f6cb0155c3acc9dd16961c571e7694dccfe27d87480bb6793fa5acfc in /root/ "
+            },
+            {
+              "digest": "sha256:9c6e7ecabe7abc97f6750a391ffda4350590a7c7ac84658f534aa15bd6d8709e",
+              "size": 16928,
+              "instruction": "COPY file:37d70b194e30e69206f8d1b80738f9fda0af05fed50858210c5f197adafe9d57 in /root/ "
+            },
+            {
+              "digest": "sha256:2e32a9dd99d35bb896fe2098b53f67170795559b6837aec95b6d7973837eaec1",
+              "size": 9832289,
+              "instruction": "/bin/sh -c apt-get update &&     apt-get -y install python-pip &&     apt-get -y install build-essential ruby gem"
+            },
+            {
+              "digest": "sha256:4e4a1279aa34c529b339414b5d5733a6b6d5427a36f217bb9a9b2c6cd13055f3",
+              "size": 92,
+              "instruction": "/bin/sh -c pip install newrelic-plugin-agent"
+            },
+            {
+              "digest": "sha256:b7d853524f896d13f2653b2f8f514a8797832b780aef17e03647519c8f432b61",
+              "size": 3655950,
+              "instruction": "/bin/sh -c gem install redis -v 3.0.7"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /etc/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/run/newrelic/"
+            },
+            {
+              "size": 0,
+              "instruction": "/bin/sh -c mkdir -p /var/log/redis/"
+            },
+            {
+              "digest": "sha256:e60ad3ab49b1b4fa0761701f327257a4a413d69968fda302d7110c3682e84655",
+              "size": 1313,
+              "instruction": "/bin/sh -c cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg     /etc/newrelic/newrelic-plugin-agent.cfg"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/root/start_script.sh\"]"
+            }
+          ]
+        }
+      ]
+    }
+}

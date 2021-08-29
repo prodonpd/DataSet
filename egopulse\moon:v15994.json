@@ -1,0 +1,179 @@
+{
+    "id": "",
+    "name": "egopulse/moon",
+    "slug": "egopulse/moon",
+    "type": "image",
+    "publisher": {
+      "id": "1c9400cc8f1349539a38c322c176c963",
+      "name": "egopulse"
+    },
+    "created_at": "2016-11-08T04:53:35.249319",
+    "updated_at": "2019-07-27T04:38:13.128235",
+    "short_description": "",
+    "full_description": "",
+    "source": "community",
+    "popularity": 0,
+    "categories": null,
+    "operating_systems": [
+      {
+        "label": "",
+        "name": ""
+      },
+      {
+        "label": "Linux",
+        "name": "linux"
+      }
+    ],
+    "architectures": [
+      {
+        "label": "",
+        "name": ""
+      },
+      {
+        "label": "x86-64",
+        "name": "amd64"
+      }
+    ],
+    "links": null,
+    "screenshots": null,
+    "logo_url": {
+      "large": "",
+      "small": ""
+    },
+    "is_offline": false,
+    "plan": null,
+    "certification_status": "not_certified",
+    "start_count": 0,
+    "filter_type": "community",
+    "pull_count": "1M+",
+    "moreinfo": {
+      "user": "egopulse",
+      "name": "moon",
+      "namespace": "egopulse",
+      "repository_type": "image",
+      "status": 1,
+      "description": "",
+      "is_private": false,
+      "is_automated": false,
+      "can_edit": false,
+      "star_count": 0,
+      "pull_count": 4386311,
+      "last_updated": "2019-07-27T04:38:13.128235",
+      "is_migrated": false,
+      "has_starred": false,
+      "full_description": "",
+      "affiliation": "",
+      "permissions": {
+        "admin": false,
+        "read": true,
+        "write": false
+      }
+    },
+    "tag": {
+      "name": "v15994",
+      "full_size": 10104338,
+      "images": [
+        {
+          "architecture": "amd64",
+          "digest": "sha256:804f7424cd32677a0865d52ae69502fda261ed84961b5dcba184395c5ffe0282",
+          "features": "",
+          "os": "linux",
+          "os_features": "",
+          "os_version": null,
+          "size": 10104338,
+          "variant": null
+        }
+      ],
+      "id": 60779251,
+      "repository": 1031605,
+      "creator": 1181608,
+      "last_updater": 1181608,
+      "last_updater_username": "pulsedev",
+      "image_id": null,
+      "v2": true,
+      "last_updated": "2019-07-02T20:44:58.677107",
+      "history": [
+        {
+          "size": 10104338,
+          "digest": "sha256:804f7424cd32677a0865d52ae69502fda261ed84961b5dcba184395c5ffe0282",
+          "architecture": "amd64",
+          "os": "linux",
+          "os_version": null,
+          "os_features": null,
+          "variant": null,
+          "features": null,
+          "layers": [
+            {
+              "digest": "sha256:e7c96db7181be991f19a9fb6975cdbbd73c65f4a2681348e63a141a2192a5f10",
+              "size": 2757034,
+              "instruction": "ADD file:a86aea1f3a7d68f6ae03397b99ea77f2e9ee901c5c59e59f76f93adbb4035913 in / "
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/bin/sh\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NGINX_VERSION=1.17.1"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV NJS_VERSION=0.3.3"
+            },
+            {
+              "size": 0,
+              "instruction": " ENV PKG_RELEASE=1"
+            },
+            {
+              "digest": "sha256:3fb6217217ef7b086ff12ef80db6a61ec86f4af3b65343f23280e2a74697535c",
+              "size": 5705132,
+              "instruction": "/bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     \"     && case \"$apkArch\" in         x86_64)             set -x             && KEY_SHA512=\"e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin\"             && apk add --no-cache --virtual .cert-deps                 openssl             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ \"$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)\" = \"$KEY_SHA512\" ]; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && printf \"%s%s%s\\n\"                 \"https://nginx.org/packages/mainline/alpine/v\"                 `egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release`                 \"/main\"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && echo \"${tempDir}/packages/alpine/\" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -n \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n \"/etc/apk/keys/nginx_signing.rsa.pub\" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps=\"$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, \"\\nso:\", $2); print \"so:\" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )\"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log"
+            },
+            {
+              "size": 0,
+              "instruction": " EXPOSE 80"
+            },
+            {
+              "size": 0,
+              "instruction": " STOPSIGNAL SIGTERM"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"nginx\" \"-g\" \"daemon off;\"]"
+            },
+            {
+              "size": 0,
+              "instruction": " VOLUME [/etc/nginx/logs]"
+            },
+            {
+              "digest": "sha256:5f3bcc2336d29ad6e3e96c44a8371f24b54e08254dcb85da1f9fead0dc4be968",
+              "size": 916,
+              "instruction": "COPY file:0c8db8488b0cae28d56858f017effca6ffca6a23a32387d5cdf473244c4f5573 in /etc/nginx/nginx.conf "
+            },
+            {
+              "digest": "sha256:4c084955f61389707de34078af24726593d5901b6b7ce03d407a9ab5fc37f0a6",
+              "size": 1102,
+              "instruction": "COPY file:695ceac96252a26182271f7316691140e1ad38a1281201263fddbc3f4eeea7b1 in /etc/nginx/mime.types "
+            },
+            {
+              "digest": "sha256:6d1134ad939d1c2a8e35499937ff2aa31bb52cb4cee8f901fbcbef286c1ef376",
+              "size": 1640154,
+              "instruction": "COPY dir:53d4271b0a5ce635cb13e7392dea10f2cab8cda8a412c8b79004713324e0cb8f in /dist/asset "
+            },
+            {
+              "size": 0,
+              "instruction": " ENV LOCALIZE=en"
+            },
+            {
+              "size": 0,
+              "instruction": " CMD [\"/bin/sh\" \"-c\" \"cp /dist/asset/localize/${LOCALIZE}/* /dist/asset/localize || true && nginx -g 'daemon off;' -c nginx.conf -p /etc/nginx/\"]"
+            }
+          ]
+        }
+      ]
+    }
+ }

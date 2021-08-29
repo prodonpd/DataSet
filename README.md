@@ -1,5 +1,3 @@
-# DataSet
-
 ## The struct of DataSet
 * name(slug): the name of image
 * type: the type of this data

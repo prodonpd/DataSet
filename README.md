@@ -50,5 +50,5 @@
 ### node:12.10.json
 * meta data of Docker image node:12.10, which contains software vulnerabilities
 
-### ubuntuandimages\mysql:latest.json
-* meta data of Docker image ubuntuandimages/mysql:latest, which contains coinminer malware
+### killroytest\temp:latest.json
+* meta data of Docker image killroytest/temp:latest, which contains coinminer malware

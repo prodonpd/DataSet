@@ -1,4 +1,4 @@
-## The struct of DataSet
+## The struct of metadata
 * name(slug): the name of image
 * type: the type of this data
 * publisher:
@@ -37,6 +37,7 @@
       * digest: this layer's digest
       * size: this layer's size
       * instruction: the command execute in this layer
+---
 
 ### egopulse\moon:v15994.json
 * meta data of Docker iamge egopulse/moon:v15994, which contains a misconfiguration risk
@@ -52,3 +53,6 @@
 
 ### killroytest\temp:latest.json
 * meta data of Docker image killroytest/temp:latest, which contains coinminer malware
+
+---
+We had reported all result to Docker Hub
